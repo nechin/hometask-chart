@@ -19,13 +19,13 @@
 	</body>
 
 	<script>
-		var intervalEl;
+		var intervalEl;	// Interval identifier
 		
 		$(document).ready(function() {
-			//update();
 			intervalEl = setInterval(update, 1000);
 		});
 
+		// Update chart
 		function update() {
 			var d = new Date();
 			var s = d.getTime();
@@ -39,7 +39,6 @@
 						c.x = data[i][0];
 						c.y = data[i][1];
 					}
-					//$('#chart')[0].setAttribute("fill-opacity", "0.1");
 				}
 				else {
 					clearInterval(intervalEl);
