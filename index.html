@@ -19,13 +19,13 @@
 	</body>
 
 	<script>
-		var intervalEl;
+		var intervalEl;	// Interval identifier
 		
 		$(document).ready(function() {
-			//update();
 			intervalEl = setInterval(update, 1000);
 		});
 
+		// Update chart
 		function update() {
 			var d = new Date();
 			var s = d.getTime();
